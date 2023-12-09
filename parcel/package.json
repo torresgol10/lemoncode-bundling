@@ -1,0 +1,32 @@
+{
+  "name": "parcel",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "browserslist": "last 1 versions",
+  "source": "./src/index.html",
+  "scripts": {
+    "start": "run-p -l type-check:watch start:dev",
+    "start:dev": "rimraf dist && parcel --open",
+    "build": "rimraf dist && parcel build",
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "npm run type-check -- --watch"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.10.0",
+    "@types/react": "^18.2.31",
+    "@types/react-dom": "^18.2.14",
+    "npm-run-all": "^4.1.5",
+    "parcel": "^2.10.0",
+    "process": "^0.11.10",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "keywords": [],
+  "author": "Ivan Torres <torresgol10.itd@gmail.com> (https://torresgol10.github.io/lazyload-image-scroll/index.html)",
+  "license": "ISC"
+}
